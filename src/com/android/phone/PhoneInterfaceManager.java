@@ -1685,6 +1685,7 @@ public void toggleLTE(boolean on) {
 
     @Override
     public void setCellInfoListRate(int rateInMillis) {
+        enforceModifyPermission();
         mPhone.setCellInfoListRate(rateInMillis);
     }
 
